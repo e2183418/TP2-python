@@ -6,3 +6,6 @@ with open('JsonTest', 'r') as json_file:
 
 with open('output.csv', 'w', newline='') as csv_file:
     writer = csv.writer(csv_file)
+    writer.writerow(['reel', 'imaginaire'])
+    for chiffreComplex in data:
+        writer.writerow(chiffreComplex)
