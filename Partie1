@@ -1,3 +1,5 @@
-import os
 import json
 import csv
+
+with open('JsonTest', 'r') as json_file:
+    data = json.load(json_file)
