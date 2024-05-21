@@ -7,3 +7,7 @@ def lire_fichier_pokemeon(fichier_csv):
 
         dict_pokemon = {l[0]: list(map(int, l[1:])) for l in reader}
     return dict_pokemon
+#test de la fonction
+fichier_csv= 'pokemon.csv'
+dict_pokemon= lire_fichier_pokemeon(fichier_csv)
+print(dict_pokemon)
