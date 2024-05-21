@@ -1,1 +1,9 @@
 import csv
+
+def lire_fichier_pokemeon(fichier_csv):
+    
+    with open(fichier_csv, mode='r', newline='') as file:
+        reader= csv.reader(file)
+
+        dict_pokemon = {l[0]: list(map(int, l[1:])) for l in reader}
+    return dict_pokemon
